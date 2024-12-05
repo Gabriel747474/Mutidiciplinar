@@ -1,19 +1,20 @@
+
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="Style/contato.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-
-    <title>Contato - Kevyn e os Kevyns</title>
+    <link rel="stylesheet" href="Style/principal.css"> <!-- Link para seu CSS -->
+    <title>Kevyn e os Kevyns</title>
 </head>
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> <!-- Adicionando fixed-top -->
         <button type="button" class="btn btn-link text-light mr-2">
-        <img src="imagens/logo.png" alt="menu" class="img-fluid">
+            <img src="imagens/logo.png" alt="menu" class="img-fluid">
         </button>
         <a class="navbar-brand" href="principal.php">Kevyn e os Kevyns</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -37,13 +38,12 @@
             </form>
 
             <div class="btn-group mx-3" role="group" aria-label="Basic example">
-            <a href="consulta.php">    
+            <a href="produto.php">    
             <button type="button" class="btn btn-link text-light">Marcar consulta</button>
             </a>
                 
                     <button type="button" class="btn btn-link text-light">
-
-                        <img src="imagens/Shopping cart.png" alt="Cadastrar Produto" class="img-fluid">
+                    <a href="carrinho.php"><img src="imagens/Shopping cart.png" alt="Cadastrar Produto" class="img-fluid"></a>
                     </button>
 
             </div>
@@ -56,57 +56,30 @@
                 </div>
             </a>
         </div>
-</nav>
+    </nav>
+    <main>
+        <div class="container-fluid">
+            <div class="d-flex no-gutters">
 
 
-
-            <div class="btn-group mx-3" role="group" aria-label="Basic example">
-            <a href="produto.php">    
-            <button type="button" class="btn btn-link text-light">Cadastrar Produto</button>
-            </a>
-
-            <a href="carrinho.php">
-
-                
-                    <button type="button" class="btn btn-link text-light">
-
-                        <img src="imagens/Shopping cart.png" alt="Cadastrar Produto" class="car">
-                    </button>
-   </a>
-
-            </div>
-
-            <a href="cadastro.php">
-                <div class="perfil">
-                    <button type="button" class="btn btn-link text-light ml-3">
-                    <a href="carrinho.php"><img src="imagens/Shopping cart.png" alt="Cadastrar Produto" class="img-fluid"></a>
-                    </button>
+                <div class="image-container">
+                    <a href="Animal/animal.php">
+                        <img src="imagens/fundo.png" alt="Plástico" class="img-fluid">
+                        <div class="overlay"></div>
+                        <div class="caption">Bem Animal</div>
                 </div>
-            </a>
+                </a>
+
+
+
+
+            
+
+
+               
+            </div>
         </div>
-</nav>
-
-<form class="contato" method="POST" action="mailto:11gabriel110211@gmail.com" enctype="text/plain">
-    <h1>Entre em contato</h1>
-
-    <label for="nome" id="nome">Nome</label>
-    <input type="text" id="nomeid" placeholder="Insira o seu nome" required="required" name="nome" />
-
-    <br><br>
-    <label for="fone" id="fone">Telefone</label>
-    <input type="tel" id="foneid" placeholder="Insira seu numero" name="fone" />
-
-    <br><br>
-    <label for="email">Email</label>
-    <input type="email" id="emailid" placeholder="Insira seu email" name="email" />
-
-    <br><br>
-    <textarea placeholder="Deixe sua mensagem" name="mensagem"></textarea>
-    <br><br>
-    <input type="submit" class="enviar" value="Enviar" />
-</form>
-
-
+    </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
