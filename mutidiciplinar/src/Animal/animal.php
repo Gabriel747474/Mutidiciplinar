@@ -104,17 +104,32 @@
     </aside>
 
     <div class="produto">
-        <img class="garrafa" src="../imagens/clinica.jpg">
+        <img class="figura" src="../imagens/clinica.jpg">
 
         <p class="descrição">Marque a consulta </p>
 
         <p class="preço">R$ 50, <sub>00</sub></p>
 
         <input type="number" id="qtde_1" min="1" value="1">
-        <button class="comprar" onclick="adicionarAoCarrinho(1, 'qtde_1')">Comprar</button>
+        <button class="comprar" onclick="adicionarAoCarrinho(21, 'qtde_1')">Comprar</button>
 
         <p class="endereco">São Paulo, Jardim Nordeste </p>
+
+        
     </div>
+    <div class="produto2">
+        <img class="figura" src="../imagens/clinica.jpg">
+
+        <p class="descrição">Doar</p>
+
+        <p class="preço">R$ 00,<sub>00</sub></p>
+        <input type="number" id="qtde_3" min="1" value="1">
+        <button class="comprar" onclick="alert(' Esta funcionalidade está em desenvolvimento!')">Doar</button> 
+        
+
+        <p class="endereco">São Paulo, Jardim Nordeste</p>
+    </div>
+    
 
     <footer></footer>
 
@@ -135,17 +150,19 @@
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    alert(' consulta adicionado ao carrinho!');
-                    window.location.href = '../carrinho.php';
+                    console.log(' consulta adicionado ao carrinho!');
+                    window.location.href = '../consulta.php';
                 } else {
                     alert(data.error || 'Erro ao adicionar consulta ao carrinho');
                 }
             })
             .catch(error => {
                 console.error('Erro:', error);
-                alert('Erro ao adicionar consulta ao carrinho');
+                console.log('Erro ao adicionar consulta ao carrinho');
             });
         }
+         function mostrarMensagem() 
+         { alert("Esta funcionalidade está em desenvolvimento!"); } 
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

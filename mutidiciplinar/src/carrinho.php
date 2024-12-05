@@ -87,7 +87,7 @@ $itens = $carrinho->listarCarrinho();
             <?php foreach ($itens as $item): ?>
                 <div class="cart-item" data-produto-id="<?php echo $item['idProduto']; ?>">
                     <div class="item-image">
-                        <img src="<?php echo htmlspecialchars($item['imagem'] ?? 'imagens/caixa.jpg'); ?>" 
+                        <img src="<?php echo htmlspecialchars($item['imagem'] ?? 'imagens/cachorro.png'); ?>" 
                              alt="<?php echo htmlspecialchars($item['nome']); ?>">
                     </div>
                     <div class="detalhes">
